@@ -1,0 +1,31 @@
+{
+    "name": "kerwinzc/easyauth",
+    "description": "API接口签名验证与Token授权验证",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kerwin",
+            "email": "kerwin.zc@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kerwinzc\\EasyAuth\\": "src/"
+        },
+        "files": [
+            "helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kerwinzc\\EasyAuth\\ServiceProvider"
+            ]
+        }
+    }
+}
