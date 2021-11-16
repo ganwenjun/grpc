@@ -1,31 +1,25 @@
 {
-    "name": "kerwinzc/easyauth",
-    "description": "API接口签名验证与Token授权验证",
+    "name": "ganwenjun/grpc",
+    "description": "测试",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "grpc/grpc": "^1.38",
+        "google/protobuf": "^v3.12.2"
+    },
     "license": "MIT",
     "authors": [
         {
-            "name": "Kerwin",
-            "email": "kerwin.zc@foxmail.com"
+            "name": ".M.C",
+            "email": "2522643909@qq.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=7.0",
-        "illuminate/support": "~5"
-    },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Kerwinzc\\EasyAuth\\": "src/"
-        },
-        "files": [
-            "helpers/functions.php"
-        ]
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Kerwinzc\\EasyAuth\\ServiceProvider"
-            ]
+            "GPBMetadata\\": "grpc/GPBMetadata/",
+            "Proto\\": "grpc/Proto/",
+            "QihuiGrpc\\": "grpc/service/"
         }
     }
 }
